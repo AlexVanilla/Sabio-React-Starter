@@ -26,6 +26,7 @@ phases:
 artifacts:
   files:
     - dist/**/*
+  discard-paths: yes
 #cache:
 #  paths:
 #    - '/root/.m2/**/*'
