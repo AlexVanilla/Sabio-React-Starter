@@ -23,7 +23,7 @@ phases:
     commands:
 #      - echo Entered the post_build phase...
       - echo Build completed on `date`
-      - aws s3 sync dist s3://sabio-react-ui --delete
+      - aws s3 sync dist s3://sabio-react-ui --delete --acl public-read
 artifacts:
   files:
     - dist/**/*
